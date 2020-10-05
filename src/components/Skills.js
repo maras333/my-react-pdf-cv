@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato Bold',
     fontSize: 11,
     marginBottom: 10,
+    textTransform: 'uppercase'
   },
   skills: {
     fontFamily: 'Lato',

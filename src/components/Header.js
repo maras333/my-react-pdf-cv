@@ -1,28 +1,33 @@
 import React from 'react';
 
-import { Link, Text, View, StyleSheet } from '@react-pdf/renderer';
+import { Link, Text, View, StyleSheet, Image } from '@react-pdf/renderer';
+import Logo from '../loooogo.jpg'
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    borderBottomWidth: 2,
-    borderBottomColor: '#112131',
+    borderBottomWidth: 4,
+    borderBottomColor: '#6c6ce0',
     borderBottomStyle: 'solid',
     alignItems: 'stretch',
+    justifyContent: 'space-between',
+    paddingBottom: 10
   },
   detailColumn: {
     flexDirection: 'column',
-    flexGrow: 9,
     textTransform: 'uppercase',
+    justifyContent: 'flex-end'
   },
   linkColumn: {
     flexDirection: 'column',
-    flexGrow: 2,
     alignSelf: 'flex-end',
     justifySelf: 'flex-end',
   },
+  image: {
+    marginBottom: 10,
+  },
   name: {
-    fontSize: 24,
+    fontSize: 20,
     fontFamily: 'Lato Bold',
   },
   subtitle: {
@@ -33,9 +38,8 @@ const styles = StyleSheet.create({
   link: {
     fontFamily: 'Lato',
     fontSize: 10,
-    color: 'black',
+    color: '#FFF',
     textDecoration: 'none',
-    alignSelf: 'flex-end',
     justifySelf: 'flex-end',
   },
 });
@@ -43,11 +47,14 @@ const styles = StyleSheet.create({
 const Header = () => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
-      <Text style={styles.name}>Luke Skywalker</Text>
-      <Text style={styles.subtitle}>Jedi Master</Text>
+      <Text style={styles.name}>Marek Czyż</Text>
+      <Text style={styles.subtitle}>Software developer</Text>
     </View>
     <View style={styles.linkColumn}>
-      <Link style={styles.link}>luke@theforce.com</Link>
+      <Text style={styles.subtitle}>Warsaw, Poland</Text>
+      <Text style={styles.subtitle}>+48 663 145 368</Text>
+      <Link style={styles.link}>maras.czyz@gmail.com</Link>
+      <Link style={styles.link}>www.marekczyz.xyz</Link>
     </View>
   </View>
 );

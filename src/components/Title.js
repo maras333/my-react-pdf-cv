@@ -8,6 +8,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginBottom: 10,
     textTransform: 'uppercase',
+    color: '#6c6ce0',
+    textDecoration: 'underline'
   },
 });
 
